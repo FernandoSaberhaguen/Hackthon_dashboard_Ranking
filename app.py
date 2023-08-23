@@ -16,7 +16,7 @@ def plot_data(data, title):
     fig, ax = plt.subplots(figsize=(10, 5))
     
     # Definir colores únicos para cada equipo
-    colors = ['blue', 'green', 'red', 'purple', 'orange']
+    colors = ['blue', 'green', 'gold', 'purple', 'orange']
     
     # Crear el gráfico de dispersión con triángulos para cada equipo
     for idx, row in data.iterrows():
@@ -24,9 +24,12 @@ def plot_data(data, title):
         ax.hlines(row['Score modelo'] + row['STD'], xmin=-0.5, xmax=4.5, color=colors[idx], linestyle='--')
     
     # Agregar la línea punteada roja para el threshold
-    ax.hlines(0.90, xmin=-0.5, xmax=4.5, color='red', linestyle='--')
+    ax.hlines(0.90, xmin=-0.5, xmax=4.5, color='red', linestyle='-')
     ax.set_ylim(0.7, 1.0)
     ax.set_title(title)
+    
+    # Agregar cuadrícula
+    ax.grid(True)
     
     st.pyplot(fig)
 
