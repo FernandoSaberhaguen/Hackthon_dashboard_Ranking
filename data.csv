@@ -1,5 +1,6 @@
-pandas
-numpy
-matplotlib
-seaborn
-streamlit
+Name team,Score modelo
+Team A,0.85
+Team B,0.90
+Team C,0.87
+Team D,0.92
+Team E,0.88
