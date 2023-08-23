@@ -1,6 +1,6 @@
-Name team,Score modelo
-Team A,0.85
-Team B,0.90
-Team C,0.87
-Team D,0.92
-Team E,0.88
+Name team,Score modelo,STD
+Team A,0.85,0.023
+Team B,0.90,0.044
+Team C,0.87,0.033
+Team D,0.92,0.015
+Team E,0.88,0.042
