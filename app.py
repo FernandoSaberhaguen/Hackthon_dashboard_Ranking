@@ -33,12 +33,12 @@ def plot_data(data, title):
     
     st.pyplot(fig)
 
-st.write(data[['Name team', 'Score modelo', 'STD']])
 
 # Gráfica Neural Network Model
+st.write('Neural Network Model Table')
+st.write(data[['Name team', 'Score modelo', 'STD']])
 st.subheader('Neural Network Model')
 plot_data(data, 'Neural Network Model Scores')
-st.write('Neural Network Model Table')
 
 # Gráfica Time Series Model 
 st.subheader('Time Series Model')
