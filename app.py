@@ -9,7 +9,7 @@ def load_data(file_name: str):
 data = load_data('data.csv')
 
 # Creando la interfaz de usuario con Streamlit
-st.title('Dashboard de Modelos')
+st.title('Ranking Team')
 
 # Gráfica Neural Network Model
 st.write(data[['Name team', 'Score modelo']])
